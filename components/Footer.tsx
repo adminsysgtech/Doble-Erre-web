@@ -16,8 +16,8 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-20 mb-20">
           <div className="col-span-1">
             <div className="flex items-center gap-3 mb-10">
-              <span className="text-4xl font-handwriting text-white">
-                Doble Erre
+              <span className="text-3xl font-black italic tracking-tighter text-white uppercase">
+                DOBLE ERRE
               </span>
             </div>
             <div className="space-y-4 mb-10">

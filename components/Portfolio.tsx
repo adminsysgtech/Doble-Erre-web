@@ -6,19 +6,20 @@ import { ExternalLink, Sparkles } from 'lucide-react';
 const Portfolio: React.FC = () => {
   const [filter, setFilter] = useState('Todo');
   const [visibleCount, setVisibleCount] = useState(3);
-  const categories = ['Todo', 'Diseño', 'Impresión', 'Editorial', 'Merch'];
+  const categories = ['Todo', 'Rotulación', 'Señalización', 'Impresión', 'Editorial', 'Merch'];
 
   const categoryColors: Record<string, string> = {
     'Todo': 'bg-brand-accent',
-    'Diseño': 'bg-brand-magenta',
-    'Impresión': 'bg-brand-orange',
+    'Rotulación': 'bg-brand-orange',
+    'Señalización': 'bg-brand-steelblue',
+    'Impresión': 'bg-brand-magenta',
     'Editorial': 'bg-brand-red',
-    'Merch': 'bg-brand-steelblue'
+    'Merch': 'bg-brand-deepblue'
   };
 
   const filteredItems = filter === 'Todo' 
     ? PORTFOLIO 
-    : PORTFOLIO.filter(item => item.category === filter || (filter === 'Diseño' && item.category === 'Editorial'));
+    : PORTFOLIO.filter(item => item.category === filter);
 
   useEffect(() => {
     setVisibleCount(3);
@@ -55,7 +56,7 @@ const Portfolio: React.FC = () => {
               <button 
                 key={cat}
                 onClick={() => setFilter(cat)}
-                className={`px-8 py-3 rounded-2xl text-xs font-black uppercase tracking-widest transition-all duration-300 ${
+                className={`px-6 py-3 rounded-2xl text-[10px] font-black uppercase tracking-widest transition-all duration-300 ${
                   filter === cat 
                   ? `${categoryColors[cat]} text-white shadow-xl scale-105 active:scale-95` 
                   : 'text-brand-steelblue/70 hover:text-brand-deepblue hover:bg-white/50 active:scale-95'

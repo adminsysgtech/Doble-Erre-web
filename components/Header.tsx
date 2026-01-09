@@ -60,23 +60,23 @@ const Header: React.FC = () => {
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
-          {/* Logo */}
+          {/* Logo - Se mantiene Black Italic para jerarquía visual */}
           <div 
             className="flex items-center gap-1 group cursor-pointer" 
             onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}
           >
-            <span className="text-4xl font-handwriting text-white">
-              Doble Erre
+            <span className="text-3xl font-black italic tracking-tighter text-white">
+              DOBLE ERRE
             </span>
           </div>
           
-          {/* Desktop Nav */}
+          {/* Desktop Nav - Actualizado a SemiBold Italic */}
           <nav className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
               <button 
                 key={link.name} 
                 onClick={() => scrollToSection(link.id)}
-                className="group relative text-[11px] font-black text-white/80 hover:text-white transition-colors uppercase tracking-[0.3em] outline-none"
+                className="group relative text-[11px] font-semibold italic text-white/80 hover:text-white transition-colors uppercase tracking-[0.3em] outline-none"
               >
                 {link.name}
                 <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-brand-orange transition-all duration-300 group-hover:w-full"></span>
@@ -117,7 +117,7 @@ const Header: React.FC = () => {
         </div>
       </div>
 
-      {/* Mobile Menu Overlay */}
+      {/* Mobile Menu Overlay - Actualizado a SemiBold Italic */}
       <div className={`fixed inset-0 top-0 z-[90] bg-brand-deepblue/95 backdrop-blur-2xl transition-all duration-700 md:hidden flex flex-col justify-center items-center text-center ${
         isMenuOpen ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'
       }`}>
@@ -126,7 +126,7 @@ const Header: React.FC = () => {
             <button 
               key={link.name} 
               onClick={() => scrollToSection(link.id)}
-              className="text-4xl font-black text-white hover:text-brand-accent uppercase italic tracking-tighter transition-all outline-none"
+              className="text-4xl font-semibold italic text-white hover:text-brand-accent uppercase tracking-tighter transition-all outline-none"
             >
               {link.name}
             </button>

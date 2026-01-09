@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Palette, Printer, ShoppingBag, Layout, Image, Layers, Send, Zap, ShieldAlert, Maximize, Tag, Heart, Gift } from 'lucide-react';
 // Explicitly import from types.ts
@@ -62,14 +63,43 @@ export const SERVICES: Service[] = [
   }
 ];
 
-// URLs optimizadas: w=1200, h=1500 (Relación 4:5), q=90 (Alta calidad)
 export const PORTFOLIO: PortfolioItem[] = [
-  { id: '1', title: 'Rótulo 3D Plaza Arcos', category: 'Impresión', image: 'https://images.unsplash.com/photo-1542744094-24638eff58bb?auto=format&fit=crop&q=90&w=1200&h=1500' },
-  { id: '2', title: 'Señalética Corporativa', category: 'Impresión', image: 'https://images.unsplash.com/photo-1585776245991-cf89dd7fc5c2?auto=format&fit=crop&q=90&w=1200&h=1500' },
-  { id: '3', title: 'Invitaciones Boda Premium', category: 'Editorial', image: 'https://images.unsplash.com/photo-1607190074257-dd4b7af0309f?auto=format&fit=crop&q=90&w=1200&h=1500' },
-  { id: '4', title: 'Kit Promocional Corporativo', category: 'Merch', image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=90&w=1200&h=1500' },
-  { id: '5', title: 'Etiquetas Vino Artesanal', category: 'Impresión', image: 'https://images.unsplash.com/photo-1516594915697-87eb3b1c14ea?auto=format&fit=crop&q=90&w=1200&h=1500' },
-  { id: '6', title: 'Pachones Grabados Láser', category: 'Merch', image: 'https://images.unsplash.com/photo-1602143399344-7f193bc84560?auto=format&fit=crop&q=90&w=1200&h=1500' }
+  { 
+    id: 'p1', 
+    title: 'Zigzig Kids Hair Salon - Rótulo 3D Fachada', 
+    category: 'Rotulación', 
+    image: 'zigzig.jpg' 
+  },
+  { 
+    id: 'p2', 
+    title: 'FFG - Montaje Estructural en Altura', 
+    category: 'Rotulación', 
+    image: 'ffg-1.jpg' 
+  },
+  { 
+    id: 'p3', 
+    title: 'FFG - Logotipo Corporativo 3D Finalizado', 
+    category: 'Rotulación', 
+    image: 'ffg-2.jpg' 
+  },
+  { 
+    id: 'p4', 
+    title: 'ELA Studio - Señalética Mural Artística', 
+    category: 'Rotulación', 
+    image: 'ela.jpg' 
+  },
+  { 
+    id: 'p5', 
+    title: 'Vamos Guate - Rotulación Vehicular Gran Formato', 
+    category: 'Rotulación', 
+    image: 'bus.jpg' 
+  },
+  { 
+    id: 'p6', 
+    title: 'Babalú - Neón LED e Identidad Visual', 
+    category: 'Rotulación', 
+    image: 'babalu.jpg' 
+  }
 ];
 
 export const ICON_MAP: Record<string, React.ReactNode> = {
