@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Básico -->
+    <title>Doble Erre | Imprenta, Promocionales y Diseño en Guatemala Zona 10</title>
+    <meta name="description" content="Doble Erre: Expertos en impresión digital, rótulos 3D, venta de promocionales, invitaciones de boda y diseño gráfico en Guatemala. Calidad de élite en Zona 10.">
+    <meta name="keywords" content="imprenta guatemala, promocionales guatemala, articulos publicitarios gt, invitaciones de boda guatemala, rotulos 3d guatemala, señaletica zona 10, diseño grafico guatemala, etiquetas personalizadas">
+    <link rel="canonical" href="https://dobleerre.gt/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dobleerre.gt/">
+    <meta property="og:title" content="Doble Erre | Imprenta y Diseño de Élite en Guatemala">
+    <meta property="og:description" content="Transformamos tu marca con rótulos 3D, promocionales premium y diseño gráfico de alto impacto en Zona 10.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1542744094-24638eff58bb?auto=format&fit=crop&q=90&w=1200&h=630">
+    <meta property="og:locale" content="es_GT">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://dobleerre.gt/">
+    <meta name="twitter:title" content="Doble Erre | Imprenta y Diseño de Élite en Guatemala">
+    <meta name="twitter:description" content="Transformamos tu marca con rótulos 3D, promocionales premium y diseño gráfico de alto impacto en Zona 10.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1542744094-24638eff58bb?auto=format&fit=crop&q=90&w=1200&h=630">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                magenta: '#8b1d4d',
+                cream: '#fbf1db',
+                steelblue: '#7b9bb6',
+                orange: '#f48c21',
+                red: '#ca353e',
+                dark: '#0a192f',
+                accent: '#b8ddec',
+                celeste: '#e0f2f9',
+                deepblue: '#1e3445'
+              }
+            },
+            boxShadow: {
+              'brand': '0 20px 50px -12px rgba(184, 221, 236, 0.4)',
+              'celeste': '0 10px 30px -5px rgba(184, 221, 236, 0.3)',
+              'multi': '0 10px 40px -10px rgba(139, 29, 77, 0.2), 0 10px 40px -10px rgba(244, 140, 33, 0.2)'
+            }
+          },
+          fontFamily: {
+            sans: ['Montserrat', 'sans-serif'],
+            display: ['Montserrat', 'sans-serif'],
+          }
+        }
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Montserrat', sans-serif; background-color: #ffffff; color: #1a364d; margin: 0; padding: 0; }
+        h1, h2, h3 { font-family: 'Montserrat', sans-serif; }
+        
+        [id] { scroll-margin-top: 100px !important; }
+
+        /* Animación de Recorrido de la Pintura (Ken Burns Effect) - Escalas ajustadas para "alejar" la vista */
+        @keyframes oil-flow-vibrant {
+          0% { 
+            transform: scale(1.0) translate(0%, 0%); 
+            filter: url(#oilTextureMaster) brightness(1) contrast(1.1);
+          }
+          25% { 
+            transform: scale(1.12) translate(-5%, -3%); 
+          }
+          50% { 
+            transform: scale(1.05) translate(3%, -5%); 
+            filter: url(#oilTextureMaster) brightness(1.1) contrast(1.2);
+          }
+          75% { 
+            transform: scale(1.15) translate(5%, 3%); 
+          }
+          100% { 
+            transform: scale(1.0) translate(0%, 0%); 
+            filter: url(#oilTextureMaster) brightness(1) contrast(1.1);
+          }
+        }
+        .animate-oil-flow {
+          animation: oil-flow-vibrant 45s ease-in-out infinite;
+        }
+
+        .gradient-text-palette {
+          background: linear-gradient(90deg, #8b1d4d, #f48c21, #7b9bb6, #8b1d4d);
+          background-size: 300% 100%;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          animation: gradient-shift 8s ease-in-out infinite;
+        }
+        @keyframes gradient-shift {
+          0% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
+          100% { background-position: 0% 50%; }
+        }
+        
+        .hero-canvas {
+          background-color: #050a14;
+          overflow: hidden;
+          position: relative;
+        }
+    </style>
+
+<link rel="stylesheet" href="/index.css">
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@19.2.3",
+    "react-dom": "https://esm.sh/react-dom@19.2.3",
+    "react-dom/client": "https://esm.sh/react-dom@19.2.3/client",
+    "lucide-react": "https://esm.sh/lucide-react@0.462.0?external=react",
+    "@google/genai": "https://esm.sh/@google/genai@1.34.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "path": "https://esm.sh/path@^0.12.7",
+    "vite": "https://esm.sh/vite@^7.3.0",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2"
+  }
+}
+</script>
+  <script type="module" crossorigin src="./assets/index-CBaQXJXU.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/vendor-DVvHHjOl.js">
+</head>
+<body class="overflow-x-hidden">
+    <svg style="position: absolute; width: 0; height: 0;" aria-hidden="true">
+      <filter id="oilTextureMaster" x="-10%" y="-10%" width="120%" height="120%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.08" numOctaves="4" result="canvas" />
+        <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="3" result="strokes" />
+        <feComposite in="canvas" in2="strokes" operator="arithmetic" k1="0.5" k2="0.5" result="reliefMap" />
+        <feSpecularLighting in="reliefMap" surfaceScale="5" specularConstant="1.2" specularExponent="30" lighting-color="#ffffff" result="specLight">
+          <feDistantLight azimuth="225" elevation="45" />
+        </feSpecularLighting>
+        <feComposite in="specLight" in2="SourceGraphic" operator="in" result="litPaint" />
+        <feBlend in="SourceGraphic" in2="litPaint" mode="overlay" />
+      </filter>
+    </svg>
+    <div id="root"></div>
+</body>
+</html>
