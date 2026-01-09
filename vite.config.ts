@@ -5,7 +5,7 @@ import react from '@vitejs/plugin-react';
 export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
     return {
-      // base: './' asegura que las rutas de assets sean relativas, evitando pantallas en blanco en Hostinger.
+      // Importante: './' asegura que los archivos se busquen de forma relativa
       base: './',
       server: {
         port: 3000,
