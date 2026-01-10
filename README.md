@@ -1,20 +1,23 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
 
-# Run and deploy your AI Studio app
+# 🚀 Guía para ver mi página en Hostinger (Paso a Paso)
 
-This contains everything you need to run your app locally.
+Si tu página se ve en blanco, no te asustes. Solo hay que decirle a Hostinger que lea la carpeta "cocinada" y no los "ingredientes crudos".
 
-View your app in AI Studio: https://ai.studio/apps/drive/1C9rZOPXtIFhjlVgd43eYxqYQ4cZwmphu
+### PASO 1: En GitHub
+1. Guarda los cambios haciendo clic en el botón de confirmar.
+2. Ve a la pestaña **"Actions"** (arriba en tu pantalla de GitHub).
+3. Espera a que el círculo se ponga de color **verde** ✅. Esto significa que GitHub ya terminó de preparar tu página.
 
-## Run Locally
+### PASO 2: En Hostinger (hPanel)
+1. Entra a tu cuenta de Hostinger.
+2. Ve al menú **Sitio Web** > **Git**.
+3. Si ya tienes algo conectado, dale al botón rojo que dice **"Desinstalar"**.
+4. Ahora conecta de nuevo tu GitHub:
+   - **Repository URL**: Pega el link de tu repositorio.
+   - **Branch**: ¡MUY IMPORTANTE! Borra lo que diga y escribe: `deploy`
+   - **Install Directory**: Déjalo vacío (no escribas nada).
+5. Haz clic en el botón para **Conectar/Desplegar**.
 
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+---
+**¿Por qué hacemos esto?**
+Tu código actual es como una receta (React). Hostinger no sabe cocinar, solo sabe servir platos terminados. Con este cambio, GitHub cocina la receta por ti y se la entrega lista a Hostinger en una rama llamada "deploy".

@@ -83,7 +83,7 @@ const App: React.FC = () => {
                 <p className="text-white/60 text-[10px] font-black uppercase tracking-[0.4em]">Entregas</p>
               </div>
               <div className="space-y-3 group cursor-default">
-                <p className="text-6xl font-black tracking-tighter italic group-hover:text-brand-accent transition-colors">12</p>
+                <p className="text-6xl font-black tracking-tighter italic group-hover:text-brand-accent transition-colors">10</p>
                 <p className="text-white/60 text-[10px] font-black uppercase tracking-[0.4em]">Años</p>
               </div>
               <div className="space-y-3 group cursor-default">
@@ -112,17 +112,35 @@ const App: React.FC = () => {
               </div>
               <h2 className="text-5xl md:text-7xl font-black leading-none mb-8 text-brand-deepblue uppercase italic">Confianza en <br/><span className="gradient-text-palette">Doble Erre</span></h2>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
               {[
-                { name: "Carlos Ruiz", role: "Director de Arte", text: "La fidelidad del color en Doble Erre es inmejorable.", color: "text-brand-orange", border: "border-brand-orange" },
-                { name: "Elena Gómez", role: "Editora Senior", text: "El consultor AI me ayudó a decidir acabados en segundos.", color: "text-brand-magenta", border: "border-brand-magenta" },
-                { name: "Marco Polo", role: "Brand Manager", text: "Rapidez y calidad premium constante.", color: "text-brand-red", border: "border-brand-red" }
+                { 
+                  name: "Gabriela Rivera", 
+                  role: "Directora ELA", 
+                  text: "Nos encanta el trabajo de Doble erre, porque no solo se enfocan en lo que solicitamos sino entienden las necesidades como cliente, analizan si lo solicitado quedara acorde a la expectativa, nos hacen sugerencias y el resultado final siempre cumple con los estandares y la calidad solicitada.", 
+                  color: "text-brand-accent", 
+                  border: "border-brand-accent" 
+                },
+                { 
+                  name: "Carlos Ruiz", 
+                  role: "Director de Arte", 
+                  text: "La fidelidad del color en Doble Erre es inmejorable. Su asesoría técnica nos ahorra tiempo valioso.", 
+                  color: "text-brand-orange", 
+                  border: "border-brand-orange" 
+                },
+                { 
+                  name: "Elena Gómez", 
+                  role: "Editora Senior", 
+                  text: "El consultor AI me ayudó a decidir acabados en segundos. Una herramienta vital para proyectos rápidos.", 
+                  color: "text-brand-magenta", 
+                  border: "border-brand-magenta" 
+                }
               ].map((t, idx) => (
                 <div key={idx} className={`p-12 rounded-[4rem] bg-white border-b-4 ${t.border} shadow-multi hover:scale-105 transition-all duration-700 relative overflow-hidden group`}>
                   <div className="flex gap-1.5 mb-8 text-brand-accent">
                     {[...Array(5)].map((_, i) => <span key={i} className="text-xl">★</span>)}
                   </div>
-                  <p className="text-brand-deepblue text-xl italic font-medium leading-relaxed mb-10">"{t.text}"</p>
+                  <p className="text-brand-deepblue text-lg italic font-medium leading-relaxed mb-10">"{t.text}"</p>
                   <div className="flex items-center gap-5">
                     <div className={`w-14 h-14 rounded-2xl bg-brand-accent ${t.color} flex items-center justify-center font-black text-xl shadow-lg group-hover:bg-brand-deepblue group-hover:text-white transition-colors`}>
                       {t.name.charAt(0)}
